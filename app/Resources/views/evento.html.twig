@@ -1,0 +1,11 @@
+{% extends('base.html.twig') %}{% block stylesheet %}{% endblock %}{% block body %}
+<br>
+<ul id="Evento">
+{% for e in Evento %}
+<li>{{ e.titulo }}</li>
+<li>{{ e.descripcion }}</li>
+<li>{{ e.activo }}</li>
+{% endfor %}
+</ul>
+<br>
+{% endblock %}
